@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Estilos generales de la tabla y celdas */
+.table-container {
+    max-height: calc(100vh - 200px); /* Ajusta según la altura del header */
+    overflow: auto;
+}
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0; /* border-gray-200 */
+    text-align: center; /* Centrar horizontalmente */
+    vertical-align: middle; /* Centrar verticalmente */
+    white-space: nowrap; /* Evita el ajuste de texto, permite el desbordamiento para el cálculo del ancho */
+}
+th {
+    background-color: #e0e0e0; /* lightgrey */
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+tr:nth-child(even) {
+    background-color: #f5f5f5; /* lightgray para filas pares */
+}
+tr:nth-child(odd) {
+    background-color: #ffffff; /* white para filas impares */
+}
+
+/* Estilos para filas de resumen */
+.summary-row-media {
+    background-color: #D3E8D3 !important; /* light green */
+    font-weight: bold;
+}
+.summary-row-aprobados {
+    background-color: #FFEEEE !important; /* light red */
+    font-weight: bold;
+}
+
+/* Estilos para calificaciones suspensas */
+.suspended-grade {
+    color: red;
+}
+
+/* Estilos para filas con media baja (< 4) */
+.low-average-row {
+    background-color: #fffacd; /* lightgoldenrodyellow */
+}
+
+/* Estilos para la columna de "Media" */
+.media-column-header, .media-column-cell {
+    background-color: #e6f7ff; /* light blue */
+    font-weight: bold;
+}
+
+/* Estilos para las nuevas filas de resumen - Asegurar prioridad */
+.summary-row-media {
+    background-color: #e6f7ff !important; /* light blue */
+    font-weight: bold !important;
+}
+.summary-row-aprobados {
+    background-color: #e6ffe6 !important; /* light green */
+    font-weight: bold !important;
+}
+
+/* Estilo para notas suspensas */
+.suspended-grade {
+    background-color: #ffe0e0; /* Rojo claro */
+    font-weight: bold;
+}
+/* Estilo para filas de alumnos con media baja (ej: < 4) */
+.low-average-row {
+    background-color: #fffacd; /* lightgoldenrodyellow */
+}
+/* Estilos para la columna de "Media" */
+.media-column-header, .media-column-cell {
+    background-color: #e0e0e0; /* lightgrey */
+    font-weight: bold;
+}
